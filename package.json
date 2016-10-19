@@ -1,0 +1,37 @@
+{
+  "name": "hako-db",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "babel": "mkdir build && babel -d ./build ./src -s --presets es2015",
+    "clean": "rimraf build",
+    "start": "npm run clean && npm run babel && node ./build/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greasyi/hako-db.git"
+  },
+  "author": "Greasy I.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greasyi/hako-db/issues"
+  },
+  "homepage": "https://github.com/greasyi/hako-db#readme",
+  "dependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "bluebird": "^3.4.6",
+    "lodash": "^4.16.4",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.4",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3"
+  }
+}
